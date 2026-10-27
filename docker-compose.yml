@@ -13,7 +13,8 @@ services:
     volumes:
       - dbdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U cited -d cited"]
+      # TCP, not the socket: while the image initializes a fresh volume, a temporary server listens on the socket only
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U cited -d cited"]
       interval: 3s
       timeout: 5s
       retries: 20
