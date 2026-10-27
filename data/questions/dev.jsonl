@@ -1,0 +1,30 @@
+{"id": "q-d001", "type": "answerable", "question": "How do I place an order without creating an account?", "gold_page": "p-order-place", "fact": "you can check out as a guest and create an account afterwards", "near_miss": false}
+{"id": "q-d002", "type": "answerable", "question": "The address is locked already. Is there anything you can do?", "gold_page": "p-order-change-address", "fact": "contact support right away; we may redirect it if it has not left the warehouse", "near_miss": false}
+{"id": "q-d003", "type": "answerable", "question": "Where can I download an invoice?", "gold_page": "p-order-invoice", "fact": "Orders, choose the order, Download invoice", "near_miss": false}
+{"id": "q-d004", "type": "answerable", "question": "When am I charged for a pre-order?", "gold_page": "p-order-preorder", "fact": "when you place it", "near_miss": false}
+{"id": "q-d005", "type": "answerable", "question": "Can you deliver to a PO box?", "gold_page": "p-ship-countries", "fact": "no, we cannot ship to PO boxes", "near_miss": false}
+{"id": "q-d006", "type": "answerable", "question": "Can I choose express shipping to a parcel locker?", "gold_page": "p-ship-express", "fact": "no, it is not available to PO boxes or parcel lockers", "near_miss": false}
+{"id": "q-d007", "type": "answerable", "question": "What do you do if a parcel never arrives?", "gold_page": "p-ship-lost", "fact": "after 10 business days we send a new one or refund you in full", "near_miss": false}
+{"id": "q-d008", "type": "answerable", "question": "When does the money for a returned item come back?", "gold_page": "p-return-refund-time", "fact": "5 to 7 business days after the parcel reaches the warehouse", "near_miss": false}
+{"id": "q-d009", "type": "answerable", "question": "Do I pay to send something back from the US?", "gold_page": "p-return-fee", "fact": "no, the prepaid label is free within the United States", "near_miss": false}
+{"id": "q-d010", "type": "answerable", "question": "How do I delete my account?", "gold_page": "p-account-delete", "fact": "Settings, Privacy, Delete my account; it finishes within 30 days", "near_miss": false}
+{"id": "q-d011", "type": "answerable", "question": "How do I stop getting marketing emails?", "gold_page": "p-account-newsletter", "fact": "use the unsubscribe link at the bottom of any marketing email", "near_miss": false}
+{"id": "q-d012", "type": "answerable", "question": "Why do I see two charges for one order?", "gold_page": "p-pay-double-charge", "fact": "a pending authorisation that drops off by itself in 3 to 5 business days", "near_miss": false}
+{"id": "q-d013", "type": "answerable", "question": "Can I use a gift card together with a promo code?", "gold_page": "p-pay-promo-codes", "fact": "yes, a gift card can be added on top of a promo code", "near_miss": false}
+{"id": "q-d014", "type": "answerable", "question": "How quickly do you answer emails?", "gold_page": "p-contact-support", "fact": "within 1 business day", "near_miss": false}
+{"id": "q-d015", "type": "answerable", "question": "How should I measure myself for the size chart?", "gold_page": "p-sizing-guide", "fact": "chest at the widest point and waist at the narrowest", "near_miss": false}
+{"id": "q-d016", "type": "answerable", "question": "What does the return label cost for a US return?", "gold_page": "p-return-fee", "fact": "nothing, it is free", "near_miss": false}
+{"id": "q-d017", "type": "answerable", "question": "What can I do if I do not want a replacement for a damaged item?", "gold_page": "p-ship-damaged", "fact": "ask for a refund", "near_miss": false}
+{"id": "q-d018", "type": "exact", "question": "What does error PR-E1042 mean?", "gold_page": "p-error-e1042", "fact": "the payment method was declined by the card issuer", "near_miss": false}
+{"id": "q-d019", "type": "exact", "question": "Why did I get PR-E3002?", "gold_page": "p-error-e3002", "fact": "the promo code was already used on your account", "near_miss": false}
+{"id": "q-d020", "type": "exact", "question": "How much do I have to spend to get free standard shipping?", "gold_page": "p-ship-costs", "fact": "more than $50", "near_miss": false}
+{"id": "q-d021", "type": "exact", "question": "How many days do I have to return an item?", "gold_page": "p-return-window", "fact": "30 days from delivery", "near_miss": false}
+{"id": "q-d022", "type": "exact", "question": "For how long does my account stay locked after five wrong passwords?", "gold_page": "p-account-locked", "fact": "15 minutes", "near_miss": false}
+{"id": "q-d023", "type": "unanswerable", "question": "Do you ship to Antarctica?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-d024", "type": "unanswerable", "question": "Can I add an item to an order I already placed?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-d025", "type": "unanswerable", "question": "Are your products tested on animals?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-d026", "type": "unanswerable", "question": "Can I return an item to a physical shop?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-d027", "type": "unanswerable", "question": "Why was my product review not published?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-d028", "type": "unanswerable", "question": "Who is the CEO of the company?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-d029", "type": "unanswerable", "question": "How do I track a pre-order before it ships?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-d030", "type": "unanswerable", "question": "Do you have a recycling program for old electronics?", "gold_page": null, "fact": null, "near_miss": false}

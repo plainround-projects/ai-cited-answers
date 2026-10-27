@@ -1,0 +1,120 @@
+{"id": "q-t001", "type": "answerable", "question": "How soon after ordering does the confirmation email arrive?", "gold_page": "p-order-place", "fact": "within five minutes", "near_miss": false}
+{"id": "q-t002", "type": "answerable", "question": "Where do I see the tracking information for my parcel?", "gold_page": "p-order-track", "fact": "Orders in your account or the tracking link in the shipping email", "near_miss": false}
+{"id": "q-t003", "type": "answerable", "question": "My tracking has not moved for a week. What should I do?", "gold_page": "p-order-track", "fact": "contact support with the order number after 5 business days without a scan", "near_miss": false}
+{"id": "q-t004", "type": "answerable", "question": "Can I change the delivery address after I ordered?", "gold_page": "p-order-change-address", "fact": "yes, for up to 2 hours after placing the order", "near_miss": false}
+{"id": "q-t005", "type": "answerable", "question": "How can I cancel an order myself?", "gold_page": "p-order-cancel", "fact": "choose Cancel order on the order within 1 hour if it is not packed", "near_miss": false}
+{"id": "q-t006", "type": "answerable", "question": "I want to cancel but my order was already packed.", "gold_page": "p-order-cancel", "fact": "wait for delivery and start a return", "near_miss": false}
+{"id": "q-t007", "type": "answerable", "question": "I never got an order confirmation email. What should I check?", "gold_page": "p-order-confirmation-email", "fact": "the spam folder, then Orders in your account", "near_miss": false}
+{"id": "q-t008", "type": "answerable", "question": "My order is missing from my account and I got no email. Was I charged?", "gold_page": "p-order-confirmation-email", "fact": "the payment did not go through and you were not charged", "near_miss": false}
+{"id": "q-t009", "type": "answerable", "question": "How do I get my company name and VAT number onto the invoice?", "gold_page": "p-order-invoice", "fact": "add them under Settings before you order", "near_miss": false}
+{"id": "q-t010", "type": "answerable", "question": "Do orders I placed as a guest show up in my account?", "gold_page": "p-order-history", "fact": "no, use the link in the guest order's confirmation email", "near_miss": false}
+{"id": "q-t011", "type": "answerable", "question": "Can you merge two orders into one parcel?", "gold_page": "p-order-combine", "fact": "no, not once they are placed", "near_miss": false}
+{"id": "q-t012", "type": "answerable", "question": "Is the price shown on the gift card message?", "gold_page": "p-order-gift-message", "fact": "no, the price is left off the packing slip", "near_miss": false}
+{"id": "q-t013", "type": "answerable", "question": "What if the release date of my pre-order moves?", "gold_page": "p-order-preorder", "fact": "we email you and you can cancel for a full refund", "near_miss": false}
+{"id": "q-t014", "type": "answerable", "question": "How long does standard shipping take within the US?", "gold_page": "p-ship-times", "fact": "3 to 5 business days", "near_miss": false}
+{"id": "q-t015", "type": "answerable", "question": "Do weekends count as business days for shipping?", "gold_page": "p-ship-times", "fact": "no, weekends and public holidays do not count", "near_miss": false}
+{"id": "q-t016", "type": "answerable", "question": "Which countries do you deliver to?", "gold_page": "p-ship-countries", "fact": "the US, Canada, the UK, EU member states and Australia", "near_miss": false}
+{"id": "q-t017", "type": "answerable", "question": "How long do parcels to other countries take?", "gold_page": "p-ship-countries", "fact": "7 to 14 business days", "near_miss": false}
+{"id": "q-t018", "type": "answerable", "question": "Who pays customs duties on an international parcel?", "gold_page": "p-ship-international-duties", "fact": "the recipient, on delivery", "near_miss": false}
+{"id": "q-t019", "type": "answerable", "question": "Are import taxes included in the price at checkout?", "gold_page": "p-ship-international-duties", "fact": "no, they are not included", "near_miss": false}
+{"id": "q-t020", "type": "answerable", "question": "How fast is express delivery?", "gold_page": "p-ship-express", "fact": "1 to 2 business days within the United States", "near_miss": false}
+{"id": "q-t021", "type": "answerable", "question": "When do you call a parcel late?", "gold_page": "p-ship-tracking-delay", "fact": "more than 2 business days past the quoted delivery window", "near_miss": false}
+{"id": "q-t022", "type": "answerable", "question": "I told support my parcel is late. What happens next?", "gold_page": "p-ship-tracking-delay", "fact": "we open a trace with the carrier, which takes up to 3 business days", "near_miss": false}
+{"id": "q-t023", "type": "answerable", "question": "My parcel arrived damaged. What do I do?", "gold_page": "p-ship-damaged", "fact": "report it within 7 days with photos", "near_miss": false}
+{"id": "q-t024", "type": "answerable", "question": "Can I get a replacement instead of a refund for a damaged item?", "gold_page": "p-ship-damaged", "fact": "yes, a replacement or a refund, whichever you prefer", "near_miss": false}
+{"id": "q-t025", "type": "answerable", "question": "How do I know my parcel is waiting in a locker?", "gold_page": "p-ship-pickup-point", "fact": "you get a code by email when it arrives", "near_miss": false}
+{"id": "q-t026", "type": "answerable", "question": "Can I still get my order before the holidays if I order late?", "gold_page": "p-ship-holiday", "fact": "orders placed after December 18 may not arrive before December 25", "near_miss": false}
+{"id": "q-t027", "type": "answerable", "question": "Where do I drop off a parcel I am returning?", "gold_page": "p-return-how", "fact": "at any carrier location, with the prepaid label", "near_miss": false}
+{"id": "q-t028", "type": "answerable", "question": "How do I begin a return?", "gold_page": "p-return-how", "fact": "Orders, choose the order, Start a return, print the prepaid label", "near_miss": false}
+{"id": "q-t029", "type": "answerable", "question": "Which payment method does the refund go to?", "gold_page": "p-pay-refund-method", "fact": "the payment method you used", "near_miss": false}
+{"id": "q-t030", "type": "answerable", "question": "Can I swap a pair of shoes for another size?", "gold_page": "p-return-exchange", "fact": "once per order, within 30 days of delivery", "near_miss": false}
+{"id": "q-t031", "type": "answerable", "question": "In what state do returned items need to be?", "gold_page": "p-return-condition", "fact": "unused, in original packaging, tags attached", "near_miss": false}
+{"id": "q-t032", "type": "answerable", "question": "Can I return something I have worn?", "gold_page": "p-return-condition", "fact": "no, items showing signs of wear cannot be refunded", "near_miss": false}
+{"id": "q-t033", "type": "answerable", "question": "What if my headphones stop working after four months?", "gold_page": "p-return-warranty", "fact": "electronics are covered for 12 months; contact support", "near_miss": false}
+{"id": "q-t034", "type": "answerable", "question": "How do I confirm my new account?", "gold_page": "p-account-create", "fact": "confirm the email we send; the link works for 24 hours", "near_miss": false}
+{"id": "q-t035", "type": "answerable", "question": "I forgot my password. What now?", "gold_page": "p-account-reset-password", "fact": "choose Forgot password on the login page and use the reset link", "near_miss": false}
+{"id": "q-t036", "type": "answerable", "question": "How do I change the email address of my account?", "gold_page": "p-account-change-email", "fact": "Settings, Email, type your password; confirm via the link sent to the new address", "near_miss": false}
+{"id": "q-t037", "type": "answerable", "question": "What happens to my order records when I delete my account?", "gold_page": "p-account-delete", "fact": "records needed for tax law are kept in anonymised form", "near_miss": false}
+{"id": "q-t038", "type": "answerable", "question": "How do I set up two-factor sign-in?", "gold_page": "p-account-2fa", "fact": "Settings, Security, scan the code with an authenticator app", "near_miss": false}
+{"id": "q-t039", "type": "answerable", "question": "My account is locked. How do I get back in right away?", "gold_page": "p-account-locked", "fact": "reset your password to unlock it at once", "near_miss": false}
+{"id": "q-t040", "type": "answerable", "question": "Can I turn off the shipping notification emails?", "gold_page": "p-account-newsletter", "fact": "no, order and shipping emails cannot be turned off", "near_miss": false}
+{"id": "q-t041", "type": "answerable", "question": "Which cards can I pay with?", "gold_page": "p-pay-methods", "fact": "Visa, Mastercard, American Express, PayPal and Apple Pay", "near_miss": false}
+{"id": "q-t042", "type": "answerable", "question": "When is my card charged?", "gold_page": "p-pay-methods", "fact": "when the order is placed", "near_miss": false}
+{"id": "q-t043", "type": "answerable", "question": "My card was declined. What should I do?", "gold_page": "p-pay-declined", "fact": "check the details and try again, try another card or contact your bank", "near_miss": false}
+{"id": "q-t044", "type": "answerable", "question": "Who declines a payment, you or my bank?", "gold_page": "p-pay-declined", "fact": "the card issuer", "near_miss": false}
+{"id": "q-t045", "type": "answerable", "question": "Can a company pay by bank transfer?", "gold_page": "p-pay-invoice-company", "fact": "no, we do not offer payment by bank transfer", "near_miss": false}
+{"id": "q-t046", "type": "answerable", "question": "Do gift cards expire?", "gold_page": "p-pay-gift-cards", "fact": "no, they do not expire", "near_miss": false}
+{"id": "q-t047", "type": "answerable", "question": "Can I use two gift cards on one order?", "gold_page": "p-pay-gift-cards", "fact": "no, only one gift card per order", "near_miss": false}
+{"id": "q-t048", "type": "answerable", "question": "Can I stack two promo codes?", "gold_page": "p-pay-promo-codes", "fact": "no, only one promo code works per order", "near_miss": false}
+{"id": "q-t049", "type": "answerable", "question": "In which currency are prices shown?", "gold_page": "p-pay-currency", "fact": "US dollars", "near_miss": false}
+{"id": "q-t050", "type": "answerable", "question": "Who converts the price if my card is in euros?", "gold_page": "p-pay-currency", "fact": "your bank converts the amount and may add a fee", "near_miss": false}
+{"id": "q-t051", "type": "answerable", "question": "I paid with a gift card. How will I be refunded?", "gold_page": "p-pay-refund-method", "fact": "as store credit on the same card", "near_miss": false}
+{"id": "q-t052", "type": "answerable", "question": "Can I buy something now and pay for it over several months?", "gold_page": "p-pay-installments", "fact": "yes, split into 3 equal monthly payments with no interest", "near_miss": false}
+{"id": "q-t053", "type": "answerable", "question": "Which days is the chat open?", "gold_page": "p-contact-support", "fact": "Monday to Saturday", "near_miss": false}
+{"id": "q-t054", "type": "answerable", "question": "Which cookies do you set before I accept anything?", "gold_page": "p-privacy-cookies", "fact": "only essential cookies", "near_miss": false}
+{"id": "q-t055", "type": "answerable", "question": "How can I change my cookie choice later?", "gold_page": "p-privacy-cookies", "fact": "Settings, then Privacy", "near_miss": false}
+{"id": "q-t056", "type": "answerable", "question": "I am between two sizes. Which one do I take?", "gold_page": "p-sizing-guide", "fact": "choose the larger one", "near_miss": false}
+{"id": "q-t057", "type": "answerable", "question": "Is it possible to ship a gift with a handwritten note from you?", "gold_page": "p-order-gift-message", "fact": "tick Add a gift message at checkout; it is printed on a card", "near_miss": false}
+{"id": "q-t058", "type": "answerable", "question": "Do I need to be signed in to check out?", "gold_page": "p-order-place", "fact": "no, you can check out as a guest", "near_miss": false}
+{"id": "q-t059", "type": "answerable", "question": "What do I do when a promo code shows an error?", "gold_page": "p-error-e3001", "fact": "PR-E3001 means the promo code has expired", "near_miss": false}
+{"id": "q-t060", "type": "answerable", "question": "Does a failed checkout cost me money?", "gold_page": "p-pay-double-charge", "fact": "a pending authorisation may appear and drops off by itself", "near_miss": false}
+{"id": "q-t061", "type": "answerable", "question": "What happens to the tracking of my order when the carrier rescans late?", "gold_page": "p-ship-tracking-delay", "fact": "carriers sometimes rescan a parcel late, so check tracking first", "near_miss": false}
+{"id": "q-t062", "type": "answerable", "question": "Does the invoice exist before my order ships?", "gold_page": "p-order-invoice", "fact": "it is available as soon as the order ships", "near_miss": false}
+{"id": "q-t063", "type": "answerable", "question": "Can I change the shipping speed after placing an order?", "gold_page": "p-order-place", "fact": "you pick the shipping speed at checkout", "near_miss": false}
+{"id": "q-t064", "type": "answerable", "question": "When does a standard order leave the warehouse?", "gold_page": "p-ship-times", "fact": "orders placed before 2 pm Eastern on a business day are dispatched the same day", "near_miss": false}
+{"id": "q-t065", "type": "answerable", "question": "Is there a time limit to report a lost parcel?", "gold_page": "p-ship-lost", "fact": "a parcel is treated as lost 10 business days after it shipped", "near_miss": false}
+{"id": "q-t066", "type": "answerable", "question": "What if the locker I picked is not available?", "gold_page": "p-error-e2092", "fact": "pick another locker and place the order again", "near_miss": false}
+{"id": "q-t067", "type": "answerable", "question": "How do I know my items will not disappear from my cart while I sign in again?", "gold_page": "p-error-e1100", "fact": "items in the cart are kept for 7 days", "near_miss": false}
+{"id": "q-t068", "type": "answerable", "question": "Are the cookies used for analytics switched on by default?", "gold_page": "p-privacy-cookies", "fact": "no, only essential cookies until you accept analytics", "near_miss": false}
+{"id": "q-t069", "type": "answerable", "question": "Are orders paid in installments charged in full upfront?", "gold_page": "p-pay-installments", "fact": "no, the first payment is taken when you order", "near_miss": false}
+{"id": "q-t070", "type": "answerable", "question": "Do I have to pay VAT on an order for my company?", "gold_page": "p-pay-invoice-company", "fact": "add the VAT number under Settings so it appears on the invoice", "near_miss": false}
+{"id": "q-t071", "type": "exact", "question": "What is PR-E1043?", "gold_page": "p-error-e1043", "fact": "the billing address does not match the one the card issuer has on file", "near_miss": false}
+{"id": "q-t072", "type": "exact", "question": "What does PR-E1100 mean?", "gold_page": "p-error-e1100", "fact": "the session expired during checkout", "near_miss": false}
+{"id": "q-t073", "type": "exact", "question": "What's E2091 about?", "gold_page": "p-error-e2091", "fact": "no shipping label could be created for the address", "near_miss": false}
+{"id": "q-t074", "type": "exact", "question": "I see error PR-E2092 at checkout. What is wrong?", "gold_page": "p-error-e2092", "fact": "the pickup locker is full or closed", "near_miss": false}
+{"id": "q-t075", "type": "exact", "question": "What does PR-E3001 mean?", "gold_page": "p-error-e3001", "fact": "the promo code has expired", "near_miss": false}
+{"id": "q-t076", "type": "exact", "question": "What does error PR-E4004 mean?", "gold_page": "p-error-e4004", "fact": "an item sold out while it was in your cart", "near_miss": false}
+{"id": "q-t077", "type": "exact", "question": "What is error PR-E5000?", "gold_page": "p-error-e5000", "fact": "a temporary problem on our side", "near_miss": false}
+{"id": "q-t078", "type": "exact", "question": "What does PR-E5101 say about my account?", "gold_page": "p-error-e5101", "fact": "the account is locked after too many failed sign-in attempts", "near_miss": false}
+{"id": "q-t079", "type": "exact", "question": "Explain E1042 please.", "gold_page": "p-error-e1042", "fact": "the card issuer declined the payment method", "near_miss": false}
+{"id": "q-t080", "type": "exact", "question": "How long does PR-E5101 last?", "gold_page": "p-error-e5101", "fact": "it unlocks by itself after 15 minutes", "near_miss": false}
+{"id": "q-t081", "type": "exact", "question": "How much does standard shipping cost on a $30 order?", "gold_page": "p-ship-costs", "fact": "$4.99", "near_miss": false}
+{"id": "q-t082", "type": "exact", "question": "What does express shipping cost?", "gold_page": "p-ship-costs", "fact": "$12.99", "near_miss": false}
+{"id": "q-t083", "type": "exact", "question": "What is the smallest and largest gift card amount?", "gold_page": "p-pay-gift-cards", "fact": "$10 to $200", "near_miss": false}
+{"id": "q-t084", "type": "exact", "question": "For which order totals can I pay in installments?", "gold_page": "p-pay-installments", "fact": "between $50 and $1,000", "near_miss": false}
+{"id": "q-t085", "type": "exact", "question": "How many characters must a password have?", "gold_page": "p-account-create", "fact": "at least 10", "near_miss": false}
+{"id": "q-t086", "type": "exact", "question": "How long is a password reset link valid?", "gold_page": "p-account-reset-password", "fact": "1 hour", "near_miss": false}
+{"id": "q-t087", "type": "exact", "question": "How many addresses can I save?", "gold_page": "p-account-addresses", "fact": "up to 10", "near_miss": false}
+{"id": "q-t088", "type": "exact", "question": "What is the character limit of a gift message?", "gold_page": "p-order-gift-message", "fact": "150 characters", "near_miss": false}
+{"id": "q-t089", "type": "exact", "question": "How many days is a parcel held at a locker?", "gold_page": "p-ship-pickup-point", "fact": "5 days", "near_miss": false}
+{"id": "q-t090", "type": "exact", "question": "For how many months is electronics covered by the warranty?", "gold_page": "p-return-warranty", "fact": "12 months", "near_miss": false}
+{"id": "q-t091", "type": "unanswerable", "question": "What is your return window for sale items specifically?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t092", "type": "unanswerable", "question": "Do you have a loyalty rewards program?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t093", "type": "unanswerable", "question": "Do you have physical stores I can visit?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t094", "type": "unanswerable", "question": "Do you price match competitors?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t095", "type": "unanswerable", "question": "What is your phone number?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t096", "type": "unanswerable", "question": "Do you offer gift wrapping?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t097", "type": "unanswerable", "question": "How do I become an affiliate partner?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t098", "type": "unanswerable", "question": "What is the weight limit for a parcel?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t099", "type": "unanswerable", "question": "Do you offer student discounts?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t100", "type": "unanswerable", "question": "Can I pick the exact day my parcel is delivered?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t101", "type": "unanswerable", "question": "How long is the warranty on clothing?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t102", "type": "unanswerable", "question": "What is your best-selling product?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t103", "type": "unanswerable", "question": "Do you sell physical gift cards?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t104", "type": "unanswerable", "question": "Can I change my username?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t105", "type": "unanswerable", "question": "Is there a mobile app?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t106", "type": "unanswerable", "question": "How long do you keep my order data?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t107", "type": "unanswerable", "question": "Can I get a refund on a pre-order after it has shipped?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t108", "type": "unanswerable", "question": "Do you deliver on Sundays?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t109", "type": "unanswerable", "question": "Can I split a payment between two credit cards?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t110", "type": "unanswerable", "question": "What are your support hours on public holidays?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t111", "type": "unanswerable", "question": "How do I change the language of the website?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t112", "type": "unanswerable", "question": "Do you ship hazardous goods?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t113", "type": "unanswerable", "question": "Is the yoga mat machine washable?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t114", "type": "unanswerable", "question": "What is the return policy for custom engraved items?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t115", "type": "unanswerable", "question": "Can I get my invoice in another language?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t116", "type": "unanswerable", "question": "Do you give free samples?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t117", "type": "unanswerable", "question": "How can I leave feedback about your website?", "gold_page": null, "fact": null, "near_miss": false}
+{"id": "q-t118", "type": "unanswerable", "question": "Do you adjust the price if an item goes on sale after I bought it?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t119", "type": "unanswerable", "question": "Can I choose a two-hour delivery window?", "gold_page": null, "fact": null, "near_miss": true}
+{"id": "q-t120", "type": "unanswerable", "question": "Do you offer cash on delivery?", "gold_page": null, "fact": null, "near_miss": true}
