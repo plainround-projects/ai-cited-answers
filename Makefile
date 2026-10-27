@@ -37,6 +37,7 @@ up: $(STAMP) ## start Postgres with pgvector, create the tables, load the pages 
 	$(MAKE) --no-print-directory ingest
 
 db: ## apply sql/001_schema.sql and sql/002_seed.sql (safe to repeat)
+	@for i in $$(seq 1 180); do docker compose exec -T db psql -U cited -d cited -qc 'select 1' >/dev/null 2>&1 && break || sleep 1; done
 	$(PSQL) < sql/001_schema.sql
 	$(PSQL) < sql/002_seed.sql
 
