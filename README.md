@@ -156,6 +156,7 @@ The dependency rule (domain depends on nothing; application on domain; infrastru
 - **`RecordingMissing: no recorded embedding for a text ...`:** you asked something that was never recorded (an ad-hoc question, with the recorded models). Use a question from `data/questions`, or run `make models` and `make serve` for live models.
 - **`connection refused` on port 55432:** `make up` has not run, or Docker is stopped. `make down && make up` starts clean.
 - **`network ... is ambiguous (2 matches found on name)`:** a half-finished `docker compose up` left two networks; `docker network rm` both ids shown by `docker network ls --filter name=ai-cited-answers`.
+- **`container ... is unhealthy` or `the database system is in recovery mode` during `make up`:** the first start of a fresh volume runs `initdb`, which takes a few minutes when Docker is short of memory or disk (several dozen containers on an 8 GB machine will do it). The health check waits about five minutes and `make db` waits until the database answers a query; if Docker itself is unresponsive, restart it and run `make down && make up`.
 - **Port 55432 or 8080 is in use:** change the port mapping in `docker-compose.yml` and `DATABASE_URL` or `HTTP_PORT`.
 
 ## Author and license
