@@ -159,6 +159,13 @@ The dependency rule (domain depends on nothing; application on domain; infrastru
 - **`container ... is unhealthy` or `the database system is in recovery mode` during `make up`:** the first start of a fresh volume runs `initdb`, which takes a few minutes when Docker is short of memory or disk (several dozen containers on an 8 GB machine will do it). The health check waits about five minutes and `make db` waits until the database answers a query; if Docker itself is unresponsive, restart it and run `make down && make up`.
 - **Port 55432 or 8080 is in use:** change the port mapping in `docker-compose.yml` and `DATABASE_URL` or `HTTP_PORT`.
 
+## Verification notes
+
+Verified on 2026-10-27 with `make up`, `make run`, `make test`, `make lint`, `make audit` and `make down`, in the repository and again in a fresh clone.
+
+- **Timing figures** (latencies, durations, the cost-versus-latency ratios) were recorded or measured on a machine whose load average was between 35 and 180, so they support ratios, not service levels. Rerun for clean figures: `make record`.
+- **Docker:** the Postgres container, the image build and the `make docker-up` service all completed on 2026-10-27, before the Docker engine's disk became read-only. Nothing is pending. After a Docker Desktop restart, `make down && make up && make run` repeats the check; the first start of a fresh volume can take minutes on a busy machine.
+
 ## Author and license
 
 Written by Sumit Srivastava. Released under the MIT License, see [LICENSE](LICENSE). Changes are in [CHANGELOG.md](CHANGELOG.md).
