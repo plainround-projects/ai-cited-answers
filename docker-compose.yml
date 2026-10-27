@@ -17,7 +17,7 @@ services:
       test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U cited -d cited"]
       interval: 3s
       timeout: 5s
-      retries: 20
+      retries: 100        # about five minutes: initializing a fresh volume is slow on a busy machine
 
   api:
     profiles: ["api"]
