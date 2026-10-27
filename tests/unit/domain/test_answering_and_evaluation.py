@@ -62,7 +62,7 @@ def test_a_page_level_citation_is_read_as_its_one_retrieved_chunk_but_not_when_a
     assert not check_citations("Yes [p-ship-times]", RETRIEVED).ok  # two chunks of that page were retrieved
 
 
-def test_the_fixed_refusal_is_recognised_even_with_trailing_text():
+def test_the_fixed_refusal_is_recognized_even_with_trailing_text():
     assert is_model_refusal(REFUSAL_MESSAGE)
     assert is_model_refusal("I don't have information about that in our help center")
     assert is_model_refusal(REFUSAL_MESSAGE + " [p-a:0]")

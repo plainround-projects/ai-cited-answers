@@ -8,7 +8,7 @@ A question-answering service over a help center: it indexes the current pages, r
 | **Planned hours** | 12 |
 | **Level** | Intermediate |
 | **Architecture** | [ARCHITECTURE.md](ARCHITECTURE.md), decisions in [docs/adr](docs/adr) |
-| **Technology notes** | [tech/README.md](tech/README.md), 42 notes that teach every technology used here from zero |
+| **Technology notes** | [tech/README.md](tech/README.md), 52 notes that teach every technology used here from zero |
 
 ## Prerequisites
 

@@ -60,9 +60,9 @@ def wilson_interval(successes: int, trials: int, z: float = 1.96) -> tuple[float
         return (0.0, 1.0)
     p = successes / trials
     denominator = 1 + z**2 / trials
-    centre = p + z**2 / (2 * trials)
+    center = p + z**2 / (2 * trials)
     half = z * math.sqrt(p * (1 - p) / trials + z**2 / (4 * trials**2))
-    return (max(0.0, (centre - half) / denominator), min(1.0, (centre + half) / denominator))
+    return (max(0.0, (center - half) / denominator), min(1.0, (center + half) / denominator))
 
 
 @dataclass(frozen=True, slots=True)
