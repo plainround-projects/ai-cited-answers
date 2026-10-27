@@ -8,6 +8,7 @@ A question-answering service over a help center: it indexes the current pages, r
 | **Planned hours** | 12 |
 | **Level** | Intermediate |
 | **Architecture** | [ARCHITECTURE.md](ARCHITECTURE.md), decisions in [docs/adr](docs/adr) |
+| **Technology notes** | [tech/README.md](tech/README.md), 42 notes that teach every technology used here from zero |
 
 ## Prerequisites
 
@@ -146,6 +147,7 @@ evals/               threshold.json (tuned on dev), hand_grades.jsonl (30), repo
 sql/                 001_schema.sql (DDL), 002_seed.sql (the pages, generated), 003_queries.sql (the checks).
 scripts/             make_pages.py, make_questions.py, make_seed_sql.py (regenerate the data), pull_model.sh.
 docs/adr/            decision records.
+tech/                one note per technology, from zero (start at tech/README.md).
 docker-compose.yml   Postgres + pgvector, and the service under the `api` profile.   Dockerfile  the service image.
 ```
 
