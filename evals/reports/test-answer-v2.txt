@@ -1,0 +1,10 @@
+== test set, answer prompt v2 (refusal threshold 0.648) ==
+retrieval hit rate (answerable+exact) 88/90 = 0.98 (Wilson 0.92-0.99)
+answer correct (judge)             57/90 = 0.63 (Wilson 0.53-0.73)
+unanswerable refused               26/30 = 0.87 (Wilson 0.70-0.95)
+answerable wrongly refused         28/90 = 0.31 (Wilson 0.22-0.41)
+NOT every unanswerable question was refused; answered: q-t103, q-t106, q-t107, q-t108
+misses by stage:
+  retrieval misses:  1
+  generation misses: 32
+tokens: 52215 in, 2454 out

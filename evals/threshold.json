@@ -1,0 +1,6 @@
+{
+  "threshold": 0.648,
+  "tuned_on": "dev",
+  "false_refusal_rate_on_dev": 0.0909,
+  "unanswerable_refused_rate_on_dev": 0.75
+}

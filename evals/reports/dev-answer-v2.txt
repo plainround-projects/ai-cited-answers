@@ -1,0 +1,10 @@
+== dev set, answer prompt v2 (refusal threshold 0.648) ==
+retrieval hit rate (answerable+exact) 20/22 = 0.91 (Wilson 0.72-0.97)
+answer correct (judge)             14/22 = 0.64 (Wilson 0.43-0.80)
+unanswerable refused               6/8 = 0.75 (Wilson 0.41-0.93)
+answerable wrongly refused         4/22 = 0.18 (Wilson 0.07-0.39)
+NOT every unanswerable question was refused; answered: q-d024, q-d029
+misses by stage:
+  retrieval misses:  2
+  generation misses: 6
+tokens: 13004 in, 578 out
