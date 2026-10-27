@@ -1,0 +1,39 @@
+# Postgres 17 with the pgvector extension for the chunk index, and the service itself (profile "api").
+name: ai-cited-answers
+
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: cited
+      POSTGRES_PASSWORD: cited       # local development only; real deployments inject a secret
+      POSTGRES_DB: cited
+    ports:
+      - "55432:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cited -d cited"]
+      interval: 3s
+      timeout: 5s
+      retries: 20
+
+  api:
+    profiles: ["api"]
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      INDEX_BACKEND: pgvector
+      DATABASE_URL: postgresql://cited:cited@db:5432/cited
+      MODEL_PROVIDER: ${MODEL_PROVIDER:-openai-compatible}
+      EMBEDDER_PROVIDER: ${EMBEDDER_PROVIDER:-openai-compatible}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-http://host.docker.internal:11434/v1}
+      MODEL_NAME: ${MODEL_NAME:-qwen2.5:1.5b}
+      HTTP_HOST: 0.0.0.0
+    ports:
+      - "8080:8080"
+
+volumes:
+  dbdata:

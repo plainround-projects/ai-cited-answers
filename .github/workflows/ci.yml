@@ -1,0 +1,53 @@
+name: ci
+
+on: [push, pull_request]
+
+jobs:
+  check:
+    name: Format, lint, types, import rules, offline tests with coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: make check
+
+  audit:
+    name: Dependency audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: make audit
+
+  integration:
+    name: Postgres adapter and HTTP service against pgvector
+    runs-on: ubuntu-latest
+    services:
+      db:
+        image: pgvector/pgvector:pg17
+        env:
+          POSTGRES_USER: cited
+          POSTGRES_PASSWORD: cited
+          POSTGRES_DB: cited
+        ports:
+          - 55432:5432
+        options: >-
+          --health-cmd "pg_isready -U cited -d cited"
+          --health-interval 3s
+          --health-timeout 5s
+          --health-retries 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: make install
+      - run: |
+          for f in sql/001_schema.sql sql/002_seed.sql; do
+            PGPASSWORD=cited psql -h localhost -p 55432 -U cited -d cited -v ON_ERROR_STOP=1 -q -f "$f"
+          done
+      - run: make test-integration
