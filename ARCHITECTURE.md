@@ -61,13 +61,13 @@ flowchart LR
 
 One question, in order:
 
-1. `POST /ask` validates the body (3 to 500 characters, no extra fields). The service logs a request id, a hash of the question and its length, never the text.
-2. The question is embedded. Vector search returns the 20 nearest chunk ids with their cosine similarity (in SQL, `ORDER BY embedding <=> $1`, served by an HNSW index). BM25 returns the 20 best keyword matches over chunk text with the heading path prepended.
+1. `POST /ask` validates the body (3 to 500 characters, no extra fields) and gives the request an id. Nothing is logged yet.
+2. The question is embedded. Vector search returns the 20 nearest chunk ids with their cosine similarity (in SQL, `ORDER BY embedding <=> $1, id`; the HNSW index can serve it, but on a corpus this small Postgres reads the whole table, so the result is exact). BM25 returns the 20 best keyword matches over chunk text with the heading path prepended.
 3. Reciprocal rank fusion (`1 / (60 + rank)` summed over the lists) picks the top five. For each of the five the similarity to the question is known, from the vector list or by one more query, and the highest is the retrieval confidence.
 4. If that confidence is below the threshold from `evals/threshold.json`, the reader gets the fixed refusal and the model is never called.
-5. Otherwise the prompt lists the five chunks, each under its id in square brackets, and asks for one to three sentences with an id after every claim.
+5. Otherwise the prompt lists the five chunks, each under its id in square brackets, and asks for one to three sentences with an id after every claim. If the model call fails, the service logs `model unavailable` and answers HTTP 503 instead; no answer or refusal is produced.
 6. The reply is checked in code. If it is the refusal sentence, the reader gets the refusal (reason `model_refused`). If it cites nothing, or cites an id that was not among the five retrieved for this request, it is replaced by the refusal and the reason is logged (`no_citation`, `citation_not_retrieved`). A citation that names only a page is read as that page's chunk when exactly one chunk of that page was retrieved.
-7. The response carries the status, the answer, the reason, and for each citation the chunk id, page id and heading path, so a reader can open the source.
+7. The response carries the status, the answer, the reason, and for each citation the chunk id, page id and heading path, so a reader can open the source. Only now does the service log the request: its id, a hash of the question and its length, never the text.
 
 ## Decisions and trade-offs
 
