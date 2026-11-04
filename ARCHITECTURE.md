@@ -61,7 +61,7 @@ flowchart LR
 
 One question, in order:
 
-1. `POST /ask` validates the body (3 to 500 characters, no extra fields) and gives the request an id. Nothing is logged yet.
+1. `POST /ask` validates the body (3 to 500 characters, no extra fields) and gives the request an id.
 2. The question is embedded. Vector search returns the 20 nearest chunk ids with their cosine similarity (in SQL, `ORDER BY embedding <=> $1, id`; the HNSW index can serve it, but on a corpus this small Postgres reads the whole table, so the result is exact). BM25 returns the 20 best keyword matches over chunk text with the heading path prepended.
 3. Reciprocal rank fusion (`1 / (60 + rank)` summed over the lists) picks the top five. For each of the five the similarity to the question is known, from the vector list or by one more query, and the highest is the retrieval confidence.
 4. If that confidence is below the threshold from `evals/threshold.json`, the reader gets the fixed refusal and the model is never called.
