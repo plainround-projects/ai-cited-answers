@@ -10,6 +10,24 @@ A question-answering service over a help center: it indexes the current pages, r
 | **Architecture** | [ARCHITECTURE.md](ARCHITECTURE.md), decisions in [docs/adr](docs/adr) |
 | **Technology notes** | [tech/README.md](tech/README.md), 52 notes that teach every technology used here from zero |
 
+## Architecture
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/architecture-dark.svg">
+  <img alt="A Reader calls interfaces.http and AnswerService, which retrieves through HybridRetriever from Bm25Index and the Chunk store in pgvector, prompts the ChatModel and checks citations, while the offline path chunks the help pages and ingests them." src="docs/diagrams/architecture.svg">
+</picture>
+
+The rules sit in the middle, and the model, the embedder and the chunk store each sit behind a port, so the same code runs on recorded models in tests and on Postgres with pgvector in the service.
+
+## How one run flows
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/flow-dark.svg">
+  <img alt="The seven steps of one question from POST /ask to a cited answer, with warning exits for a best match below 0.648 and for a reply that fails the citation check." src="docs/diagrams/flow.svg">
+</picture>
+
+A question is searched two ways, fused to five chunks and answered with a citation for every claim, and the amber rows are the two places it is refused instead.
+
 ## Prerequisites
 
 | Tool | Version | Used for |

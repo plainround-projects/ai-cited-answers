@@ -30,6 +30,8 @@ Dependencies point inward: import-linter fails `make lint` if `domain` or `appli
 
 ## Data flow
 
+Drawn versions of this figure and of the walk-through: [the architecture](docs/diagrams/architecture.svg) and [one run](docs/diagrams/flow.svg).
+
 ```mermaid
 flowchart LR
     subgraph offline[Offline: ingest]
